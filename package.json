@@ -1,0 +1,36 @@
+{
+  "name": "@hewfuikhien.com/sql-escape",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "sql-escape"
+  ],
+  "scripts": {
+    "test": "tsc && node dist/index.js",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  },
+  "license": "MIT",
+  "author": "Hew Fui Khien",
+  "bugs": {
+    "url": "https://github.com/hewfuikhien-com/sql-escape/issues"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "description": "![node](https://img.shields.io/node/v/@hewfuikhien.com/sql-escape) ![download](https://img.shields.io/npm/dm/@hewfuikhien.com/sql-escape) ![size](https://img.shields.io/github/languages/code-size/hewfuikhien-com/sql-escape)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hewfuikhien-com/sql-escape.git"
+  },
+  "homepage": "https://github.com/hewfuikhien-com/sql-escape#readme"
+}

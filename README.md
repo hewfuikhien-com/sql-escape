@@ -13,9 +13,15 @@ yarn add @hewfuikhien.com/sql-escape
 
 ## Example
 
+```ts
+import SQLEscape from '@hewfuikhien.com/sql-escape';
+const sql = SQLEscape('INSERT INTO %I VALUES(%L)', 'books', "O'Reilly");
+console.log(sql);
+```
+
 ```js
-import sqlEscape from '@hewfuikhien.com/sql-escape';
-const sql = sqlEscape('INSERT INTO %I VALUES(%L)', 'books', "O'Reilly");
+const SQLEscape = require('@hewfuikhien.com/sql-escape');
+const sql = SQLEscape('INSERT INTO %I VALUES(%L)', 'books', "O'Reilly");
 console.log(sql);
 ```
 

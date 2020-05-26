@@ -80,7 +80,7 @@ const ident = (val: string) => {
   return validIdent(val) ? val : quoteIdent(val);
 };
 
-const format = (query: string, ...args: any[]) => {
+const sqlEscape = (query: string, ...args: any[]) => {
   let i = 0;
   const beautifiedQuery = query.replace(/%([%sILQ])/g, (_, type) => {
     if ('%' === type) return '%';
@@ -101,4 +101,4 @@ const format = (query: string, ...args: any[]) => {
   return beautifiedQuery;
 };
 
-export default format;
+export = sqlEscape;
